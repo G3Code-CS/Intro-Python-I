@@ -10,6 +10,8 @@ import sys
 
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
+for i in sys.argv[0:]:
+    print(i)
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
@@ -18,7 +20,6 @@ import sys
 # YOUR CODE HERE
 
 
-import os
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
 
 # Print the current process ID
