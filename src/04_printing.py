@@ -14,5 +14,8 @@ z = "I like turtles!"
 print("x is %2d, y is %5.2f, z is %s" % (x, y, z))
 
 # Use the 'format' string method to print the same thing
+print("x is {0:2d}, y is {1:5.2f}, z is {2:s}".format(x, y, z))
 
 # Finally, print the same thing using an f-string
+message = f"""x is {x}, y is {y:5.2f}, z is {z}"""
+print(message)
