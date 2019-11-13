@@ -10,3 +10,12 @@ num = int(num)
 
 # YOUR CODE HERE
 
+
+def isEvenOdd(t):
+    if t % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+
+print(isEvenOdd(num))
