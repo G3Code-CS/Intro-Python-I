@@ -19,3 +19,12 @@ for line in f:
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+b = open('bar.txt', 'w')
+b.write("first line\n")
+b.write("Second line\n")
+b.write("third line\n")
+b.close()
+
+bf = open('bar.txt', 'r')
+for line in bf:
+    print(line, end='')
