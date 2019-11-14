@@ -59,7 +59,7 @@ def validate(*args):
                 return False
         elif len(argsList) == 0:
             return True
-    except:
+    except TypeError:
         return False
 
 
