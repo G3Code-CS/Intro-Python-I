@@ -43,7 +43,8 @@ def validate(*args):
     argsList = list(args[1:])
     try:
         if len(argsList) == 2:
-            if (int(argsList[0]) > 0) and (int(argsList[0]) < 13) and isinstance(int(argsList[0]), int):
+            if (int(argsList[0]) > 0) and (int(argsList[0]) < int(13))
+            and isinstance(int(argsList[0]), int):
                 if int(argsList[1]) > 0 and isinstance(int(argsList[1]), int):
                     return True
                 else:
@@ -51,7 +52,8 @@ def validate(*args):
             else:
                 return False
         elif len(argsList) == 1:
-            if int(argsList[0]) > 0 and int(argsList[0]) < 13 and isinstance(int(argsList[0]), int):
+            if int(argsList[0]) > 0 and int(argsList[0]) < int(13)
+            and isinstance(int(argsList[0]), int):
                 return True
             else:
                 return False
