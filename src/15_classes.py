@@ -23,8 +23,10 @@ class Waypoint(LatLon):
         self.name = name
 
     def __str__(self):
-        # return 'Waypoint: name is ' + self.name + ', lat is ' + self.lat+', lon is ' + self.lon
-        return 'Waypoint: name is {}, lat is {}, lon is {}'.format(self.name, self.lat, self.lon)
+        # return 'Waypoint: name is ' + self.name + ', lat is ' + self.lat+',
+        # lon is ' + self.lon
+        returnString = 'Waypoint: name is {}, lat is {}, lon is {}'
+        return returnString.format(self.name, self.lat, self.lon)
 
 # Make a class Geocache that can be passed parameters `name`, `difficulty`,
 # `size`, `lat`, and `lon` to the constructor. What should it inherit from?
@@ -39,8 +41,12 @@ class Geocache(Waypoint):
         self.size = size
 
     def __str__(self):
-        # return 'Waypoint: name is ' + self.name + ', lat is ' + self.lat+', lon is ' + self.lon
-        return 'Geocache: name is {}, lat is {}, lon is {}, difficulty is {}, size is {}'.format(self.name, self.lat, self.lon, self.difficulty, self.size)
+        # return 'Waypoint: name is ' + self.name + ', lat is ' + self.lat+',
+        # lon is ' + self.lon
+        returnString = 'Geocache: name is {}, lat is {}, lon is {}'
+        returnString += ', difficulty is {}, size is {}'
+        return returnString.format(self.name, self.lat, self.lon,
+                                   self.difficulty, self.size)
 # Make a new waypoint and print it out: "Catacombs", 41.70505, -121.51521
 
 # YOUR CODE HERE
